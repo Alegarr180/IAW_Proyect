@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Citas</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <h1>Pedir Cita</h1>
+    <form action="crear.php">
+        <div class="formulario">
+        <fieldset>
+            <legend>Datos de la cita</legend>
+            <table>
+                <tr>
+        <td><label for="fecha">Fecha: </label></td>
+        <td><input type="date" name="fecha" id=""></td>
+    </tr> 
+    <tr>
+        <td><label for="hora">Hora: </label></td>
+        <td><select name="hora">
+                <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+        </select></td>
+    </tr> 
+    <tr>
+        <td><label for="fisioterapeuta">Fisioterapeuta: </label></td>
+
+        <td><select name="fisioterapeuta" id="">
+            <option value="Dr.Ogas">Dr.Ogas</option>
+            <option value="Ldo.Indo">Ldo.Indo</option>
+            <option value="Espc.Victor">Espc.Victor</option>
+        </select></td>
+    </tr> 
+    <tr>
+        <td><label for="motivo">Motivo: </label></td>
+        <td><textarea name="motivo" id="" cols="30" rows="10" placeholder="Escribe aquí el motivo de tu consulta:"></textarea></td>
+    </tr>
+    </table>
+</div>
+    </fieldset>
+    <div class="boton">
+        <button type="submit">Enviar</button>
+        <a href="index.php">Volver</a>  
+    </div>
+    </form>
+    
+</body>
+</html>
